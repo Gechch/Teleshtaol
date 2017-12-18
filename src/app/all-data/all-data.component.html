@@ -1,0 +1,14 @@
+<div >
+  <h3 >Angular Http GET Request</h3>
+  <a *ngFor="let item of items" >
+    <div >
+      <h5 >{{item.title}}</h5>
+      <small >Latest</small>
+    </div>
+    <p >{{item.file}}</p>
+    <small >{{item.file}}.</small>
+    <p >{{item.text}}</p>
+    <small >{{item.text}}.</small >
+  </a>
+  <a routerLinkActive='/sendData' >Back</a>
+</div>

@@ -1,0 +1,70 @@
+
+<html>
+<script type="text/javascript" >
+  function validate()
+  {
+var textarea_text=document.getElementById("text");
+     if (textarea_text.value==""){
+      alert("gog");
+       return false;
+     }
+else
+        alert("Submitted!");
+      return true;
+  }
+</script>
+
+<nav >
+  <form ngFor="title" action="https://telshtaol.firebaseio.com/dat.json" class="title"    method="post" >
+    <div  >
+      <h6>Title</h6>
+      <input  ngFor="title"     name="title" type="text"  id="title" placeholder="title" aria-label="title"  [(ngModel)]="title">
+    </div>
+  </form>
+</nav>
+
+<div>
+
+  <div >
+
+  </div>
+
+
+  <form class="image">
+    <div>
+
+      <label  >
+        <h6>Image</h6> <input for="file"  align="center" name="file"  placeholder="title" type="file" id="file" [(ngModel)]="file" >
+
+      </label></div></form>
+
+  <form  class="tex"  name="homelog" action="" onsubmit="return validate();" method="post" >
+    <div >
+      <h6> Textarea </h6>
+      <textarea type="text" class="text" name="text"  id="text"  rows="3"   [(ngModel)]="text"> </textarea>
+    </div>
+
+
+  <button  (click)="onSubmit()"   class="btn btn-primary"  type="submit" value="" >Submit </button>
+    <button (click)="ongetData()">GetData</button>
+    <ul>
+      <li ngFor="let items of items">{{items}}</li>
+
+    </ul>
+  </form>
+
+</div>
+<div>
+
+  <div></div>
+  <div></div>
+.
+
+  <nav  >
+    <a    href="#"><p align="right"> <p align="center">Great Commssion,Addis Ababa,Ethiopia</p>
+      <div>
+        <p style="color:black;text-align:center;">
+
+          &copy; Copy right 2017</p>
+      </div></a></nav></div>
+</html>

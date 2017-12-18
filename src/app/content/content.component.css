@@ -1,0 +1,19 @@
+
+.text{
+  width: 60%;
+  margin-left: 0%;
+  margin-right: 25%;
+}
+.title{
+  margin-left: 25%;
+  margin-right: 50%;
+  width: 25%;
+}
+.image{
+  margin-left: 25%;
+  margin-right: 60%;
+  width: 15%;
+}
+.tex{
+  margin-left: 25%;
+}
